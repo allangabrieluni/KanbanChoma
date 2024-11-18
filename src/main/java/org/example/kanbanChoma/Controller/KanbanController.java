@@ -42,7 +42,7 @@ public class KanbanController {
         return ResponseEntity.ok(relatorio);
     }
 
-    @GetMapping("/filtrar")
+    @GetMapping("/tarefas/filtrar")
     public ResponseEntity<List<Tarefa>> filtrarTarefas(
             @RequestParam Prioridade prioridade,
             @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) Date dataLimite) {
